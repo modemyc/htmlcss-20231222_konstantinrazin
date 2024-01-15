@@ -1,12 +1,13 @@
 /* Стилизация кнопки */
 .button {
-    width: 189px;
     height: 48px;
     border-radius: 8px;
     font-size: 16px;
     color: #FFFFFF;
     border-style: solid;
     border-width: 0px;
+    line-height: normal;
+    font-family: Roboto, sans-serif;
 }
 
 .button:disabled {
