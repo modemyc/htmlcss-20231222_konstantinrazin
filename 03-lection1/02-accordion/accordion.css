@@ -27,7 +27,7 @@
     cursor: pointer;
 }
 
-.accordion__summary_text {
+.accordion__text {
     margin: 0px;
     padding: 0px 32px 24px 32px;
     color: #495057;
