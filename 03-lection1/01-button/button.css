@@ -8,6 +8,8 @@
     border-width: 0px;
     line-height: normal;
     font-family: Roboto, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 14px;
 }
 
 .button:disabled {
