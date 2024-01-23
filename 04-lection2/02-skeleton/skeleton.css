@@ -1,0 +1,72 @@
+/*обнуление марджинов*/
+/**, html {
+    margin: 0;
+}*/
+
+.skeleton {
+    display: flex;
+    flex-direction: column;
+    width: 579px;
+    border: solid 1px var(--Gray3, #ACB5BD);
+    border-radius: 8px;
+    padding: 24px 40px 32px 24px;
+    /*развлечения ради*/
+    animation: fade 1s linear infinite alternate;
+}
+
+.skeleton__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 24px;
+}
+
+.skeleton__avatar {
+    width: 64px;
+    height: 64px;
+    background-color: var(--Gray-2, #DDE2E5);
+    border-radius: 100%;
+    margin-right: 8px;
+}
+
+.skeleton__bottom {
+    
+}
+
+.skeleton__data {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 8px;
+    height: 48px;
+    align-self: center;
+}
+
+.skeleton__band {
+    height: 20px;
+    background-color: #DDE2E5;
+    flex-grow: 1;
+    border: solid 0px;
+}
+
+.skeleton__band_s {
+    width: 40%;
+}
+
+.skeleton__band_m {
+    width: 70%;
+}
+
+.skeleton__band_l {
+    width: 100%;
+}
+
+/*анимация моргания*/
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
