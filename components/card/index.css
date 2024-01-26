@@ -1,27 +1,28 @@
 .card {
-    height: 367px;
-    width: 350px;
+    /*Пока нет заполнения карты поставил такие размеры, 
+    что бы с паддингами был заявленный в макете размер*/
+    height: 307px;
+    width: 300px;
     background-color: #FFFFFF;
     border-radius: 12px;
     box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
+    padding: 30px 25px;
 }
 
 .card__content {
-    width: 300px;
-    height: 157px;
     align-self: center;
 }
 
 .card__tittle {
-    color: var(--Black, #212429);
+    color: var(--black);
     text-align: center;
     font-family: Roboto;
     font-size: 21px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding-bottom: 30px;
 }
