@@ -10,17 +10,14 @@
     line-height: 24px; 
     color: var(--Black, #212429);
     background-color: var(--White, #FFFFFF);
+    opacity: 0.8;
+    font-family: Inter;
 }
 
 .histogram__nav {
     display: flex;
     justify-content: space-between;
     margin-bottom: 6px;
-}
-
-.histogram__title {
-    opacity: 0.8;
-    font-family: Inter;
 }
 
 .histogram__viewer {
@@ -40,14 +37,11 @@
 .histogram__columns {
     display: flex;
     align-items: flex-end;
-    flex-wrap: nowrap;
-    gap: 1px;
     height: 50px;
-    width: 100%;
-
+    gap: 1px;
 }
 
-.histogram__column-basic {
+.histogram__column {
     flex-grow: 1;
     background-color: #4263EB;
 }
