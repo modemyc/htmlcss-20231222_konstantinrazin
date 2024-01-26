@@ -1,12 +1,6 @@
-/*обнуление марджинов*/
-/**, html {
-    margin: 0;
-}*/
-
 .skeleton {
     display: flex;
     flex-direction: column;
-    width: 579px;
     border: solid 1px var(--Gray3, #ACB5BD);
     border-radius: 8px;
     padding: 24px 40px 32px 24px;
@@ -38,7 +32,6 @@
     flex-direction: column;
     flex-grow: 1;
     gap: 8px;
-    height: 48px;
     align-self: center;
 }
 
@@ -46,7 +39,6 @@
     height: 20px;
     background-color: #DDE2E5;
     flex-grow: 1;
-    border: solid 0px;
 }
 
 .skeleton__band_s {
