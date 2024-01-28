@@ -10,7 +10,6 @@
     line-height: 24px; 
     color: var(--Black, #212429);
     background-color: var(--White, #FFFFFF);
-    opacity: 0.8;
     font-family: Inter;
 }
 
@@ -20,12 +19,16 @@
     margin-bottom: 6px;
 }
 
+.histogram__title {
+    opacity: 0.8;
+}
+
 .histogram__viewer {
+    text-decoration: none;
     color: #4263EB;
     text-align: right;
     font-family: Inter;
     margin-top: 3px;
-    cursor: pointer;
 }
 
 .histogram__count {
