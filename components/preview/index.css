@@ -1,3 +1,12 @@
 .preview {
     background: #F9FAFC;
+    /*height: 100%;*/
+    padding-top: 67px;
+    padding-bottom: 204px;
+}
+
+.preview__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
