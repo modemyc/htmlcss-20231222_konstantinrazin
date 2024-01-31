@@ -1,0 +1,68 @@
+.modal {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: #C4C4C4;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal__button {
+    height: 48px;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 0px;
+    background: var(--Blue, #4263EB);
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.modal__button:hover {
+    background-color: #2342C0;
+}
+
+
+.modal__window {
+    position: absolute;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    background: #FFF;
+    width: 428px;
+    height: 294px;
+    padding: 30px 40px 30px;
+}
+
+.modal__title {
+    color: #334D6E;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+    padding-bottom: 14px;
+}
+
+.modal__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.modal__text {
+    color: var(--Gray-4, #495057);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
