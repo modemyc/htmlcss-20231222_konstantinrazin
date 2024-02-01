@@ -36,8 +36,7 @@
     transform: translate(-50%, -50%);
     border-radius: 8px;
     background: #FFF;
-    width: 428px;
-    height: 294px;
+    max-width: 428px;
     padding: 30px 40px 30px;
 }
 
