@@ -8,26 +8,6 @@
     left: 0;
 }
 
-.modal__button {
-    height: 48px;
-    border-radius: 8px;
-    border-style: solid;
-    border-width: 0px;
-    background: var(--Blue, #4263EB);
-    color: #FFF;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.modal__button:hover {
-    background-color: #2342C0;
-}
-
-
 .modal__window {
     position: absolute;
     box-sizing: border-box;
