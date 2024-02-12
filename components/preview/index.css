@@ -1,6 +1,5 @@
 .preview {
     background: #F9FAFC;
-    /*height: 100%;*/
     padding-top: 67px;
     padding-bottom: 204px;
 }
@@ -9,4 +8,23 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.preview__inner {
+    padding-top: 36px;
+    padding-bottom: 0px;
+
+}
+
+.preview__content {
+    display: flex;
+}
+
+.preview__component {
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px #2124290D;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 746px;
 }

@@ -1,0 +1,37 @@
+.sideMenu {
+    margin-left: 0;
+    padding-left: 0;
+    width: 229px;
+    margin-right: 56px;
+}
+
+.sideMenu__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+}
+
+.sideMenu__element {
+    text-decoration: none;
+    color: black;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.sideMenu__element_tittle {
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 16px;
+    margin-top: 0;
+    font-weight: normal
+}
+
+.sideMenu__element:hover {
+    color: #D84910;
+}

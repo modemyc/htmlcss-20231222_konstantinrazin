@@ -12,3 +12,16 @@
     font-style: normal;
     font-weight: 500;
 }
+
+.header_inner {
+    box-sizing: border-box;
+    height: 82px;
+    padding: 24px 0;
+    border: none;
+}
+
+.header__secondary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
