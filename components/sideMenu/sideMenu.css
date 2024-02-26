@@ -2,7 +2,6 @@
     margin-left: 0;
     padding-left: 0;
     width: 229px;
-    margin-right: 56px;
 }
 
 .sideMenu__list {
@@ -23,7 +22,7 @@
     text-align: left;
 }
 
-.sideMenu__element_tittle {
+.sideMenu__tittle {
     font-family: Inter;
     font-size: 20px;
     line-height: 26px;
