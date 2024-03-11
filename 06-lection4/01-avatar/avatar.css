@@ -1,0 +1,21 @@
+.avatar {
+width: 102px;
+height: 102px;
+}
+
+.avatar__pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.avatar_s {
+    width: 64px;
+    height: 64px;
+}
+
+.avatar_l {
+    width: 160px;
+    height: 160px;
+}
