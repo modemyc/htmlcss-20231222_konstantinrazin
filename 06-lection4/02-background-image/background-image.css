@@ -8,9 +8,9 @@
     background-size: cover;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1024px) {
     .picture {
-        background-image: url(/06-lection4/02-background-image/public/forest_400.jpg);
+        background-image: url(/06-lection4/02-background-image/public/forest_1024.jpg);
     }
 }
 
@@ -20,9 +20,8 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 400px) {
     .picture {
-        background-image: url(/06-lection4/02-background-image/public/forest_1024.jpg);
+        background-image: url(/06-lection4/02-background-image/public/forest_400.jpg);
     }
 }
-
