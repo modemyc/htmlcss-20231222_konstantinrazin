@@ -15,12 +15,6 @@
         padding-bottom: 67px;
     }
 
-    .preview__cards {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-        justify-content: space-around;
-    }
 }
 
 .preview__inner {
