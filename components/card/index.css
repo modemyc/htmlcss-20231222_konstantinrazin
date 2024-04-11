@@ -9,13 +9,6 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-    .card {
-        border-radius: 8px;
-        width: 500px;
-    }
-}
-
 .card__content {
     display: flex;
     flex-direction: column;
@@ -33,6 +26,6 @@
     font-weight: 500;
     line-height: normal;
     text-decoration: none;
-    padding-top: 25px;
+    margin-top: 25px;
 }
 
