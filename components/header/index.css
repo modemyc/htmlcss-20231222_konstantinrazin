@@ -21,7 +21,7 @@
     border: none;
 }
 
-.header__secondary {
+.header__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +38,7 @@
         line-height: 136%;
     }
 
-    .header__secondary {
+    .header__top {
         flex-direction: row-reverse;
     }
 
