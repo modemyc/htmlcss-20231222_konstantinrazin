@@ -11,6 +11,7 @@
     color: var(--Black, #212429);
     background-color: var(--White, #FFFFFF);
     font-family: Inter;
+    min-width: 250px;
 }
 
 .histogram__nav {

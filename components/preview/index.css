@@ -5,9 +5,16 @@
 }
 
 .preview__cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
     gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .preview {
+        padding-bottom: 67px;
+    }
+
 }
 
 .preview__inner {
