@@ -1,0 +1,95 @@
+.checkboxes {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.checkbox {
+    position: relative;
+    display: inline-block;
+}
+
+.checkbox__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.checkbox__control {
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox__icon {
+    stroke-width: 3px;
+    stroke: #fff;
+}
+
+.checkbox__input:checked ~ .checkbox__state .checkbox__control{
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+}
+
+.checkbox__input:focus ~ .checkbox__state .checkbox__title{
+    text-decoration: underline;
+}
+
+.checkbox__input {
+    position: absolute;
+    left: -100vw;
+}
+
+.checkbox__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--grey-4);
+}
+
+.checkbox__control:checked {
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    background: var(--blue);
+}
+
+/*добавление модификаторов*/
+
+/*.checkbox__control_disabled{
+    border: 1px solid var(--grey-2);
+    background: var(--grey-2);
+}
+
+.checkbox__icon_disabled{
+    display: none;
+}
+
+.checkbox__title_disabled{
+    color: var(--grey-2);
+}*/
+
+/*мне показался такой вариант интереснее,
+так как можно будет просто отключить чекбокс
+и не надо будет добавлять к элементам модификаторы через js
+или лучше черезе модификаторы? как лучше делать?*/
+
+.checkbox__input:disabled ~ .checkbox__state .checkbox__control {
+    border: 1px solid var(--grey-2);
+    background: var(--grey-2);
+}
+
+.checkbox__input:disabled ~ .checkbox__state .checkbox__control .checkbox__icon {
+    display: none;
+}
+
+.checkbox__input:disabled ~ .checkbox__state .checkbox__title {
+    color: var(--grey-2);
+}
+
