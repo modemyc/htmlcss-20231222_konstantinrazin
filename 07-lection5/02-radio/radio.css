@@ -43,6 +43,10 @@
     color: var(--gray-4);
 }
 
+.radio__input:focus ~ .radio__state .radio__title{
+    text-decoration: underline;
+}
+
 .radio__input:disabled ~ .radio__state .radio__control {
     border-radius: 14px;
     width: 28px;
