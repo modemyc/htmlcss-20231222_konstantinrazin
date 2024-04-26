@@ -42,13 +42,6 @@
     color: var(--grey-4);
 }
 
-.checkbox__control:checked {
-    border-radius: 4px;
-    width: 28px;
-    height: 28px;
-    background: var(--blue);
-}
-
 .checkbox__input:disabled ~ .checkbox__state .checkbox__control {
     border: 1px solid var(--grey-2);
     background: var(--grey-2);
