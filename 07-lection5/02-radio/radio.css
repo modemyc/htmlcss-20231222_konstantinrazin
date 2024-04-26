@@ -1,7 +1,7 @@
 .radio__state {
     display: flex;
     flex-direction: row;
-    gap: 14px;
+    gap: 12px;
 }
 
 .radio__control {
@@ -23,16 +23,14 @@
 
 .radio__input:checked ~ .radio__state .radio__control {
     border: 2px solid var(--blue);
-    border-radius: 14px;
-    width: 28px;
-    height: 28px;
 }
 
-.radio__input:checked ~ .radio__state .radio__control .radio__control_check {
-    border-radius: 14px;
-    width: 18px;
-    height: 18px;
-    background: var(--blue);
+.radio__circle {
+    display: none;
+}
+
+.radio__input:checked ~ .radio__state .radio__control .radio__circle {
+    display: contents;
 }
 
 .radio__title {
@@ -48,16 +46,9 @@
 }
 
 .radio__input:disabled ~ .radio__state .radio__control {
-    border-radius: 14px;
-    width: 28px;
-    height: 28px;
     background: var(--grey-2);
 }
 
 .radio__input:disabled ~ .radio__state .radio__title {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
     color: var(--grey-2);
 }
