@@ -1,0 +1,46 @@
+.toggle__state {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.toggle__controle {
+    box-sizing: border-box;
+    border: 1px solid var(--grey-2);
+    border-radius: 16px;
+    width: 52px;
+    height: 28px;
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    padding: 2px;
+}
+
+.toggle__circle {
+    fill: var(--grey-2);
+    display: flex;
+    align-items: center;
+}
+
+.toggle__input {
+    position: absolute;
+    left: -100vw;
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__controle {
+    background: var(--blue);
+    border-color: var(--blue);
+    justify-content: flex-end;
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__controle .toggle__circle {
+    fill: #fff;
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__controle {
+    background: var(--grey-2);
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__controle .toggle__circle {
+    fill: var(--grey-3);
+}
