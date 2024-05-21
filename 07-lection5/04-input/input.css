@@ -56,7 +56,6 @@
     position: absolute;
     padding-right: 16px;
     align-self: flex-end;
-    visibility: hidden;
 }
 
 .input__success {
@@ -68,12 +67,10 @@
 }
 
 .input_success .input__icon_success .input__success{
-    visibility: visible;
     display: initial;
 }
 
 .input_error .input__icon_error .input__error {
-    visibility: visible;
     display: initial;
 }
 
