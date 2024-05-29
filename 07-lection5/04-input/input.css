@@ -1,22 +1,17 @@
 .input {
     display: flex;
     flex-direction: column;
-}
-
-.input__text {
-    font-family: var(--font-family);
+    font-family: Inter;
     font-weight: 500;
     font-size: 12px;
     line-height: 150%;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
     color: var(--grey-3);
 }
 
 .input__field {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .input__input {
@@ -37,47 +32,41 @@
 }
 
 .input__input::placeholder {
-    font-family: Inter;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 130%;
     color: var(--grey-2);
 }
 
 .input__input:focus {
-    border-radius: 8px;
-    fill: #fff;
-    stroke-width: 1px;
     border-color: var(--blue);
     box-shadow: 0 1px 1px 0 rgba(51, 154, 240, 0.1);
 }
 
 .input__icon {
     position: absolute;
+    padding-top: 16px;
     padding-right: 16px;
     align-self: flex-end;
 }
 
-.input__success {
+.input__icon_success {
     display: none;
 }
 
-.input__error {
+.input__icon_error {
     display: none;
 }
 
-.input_success .input__icon_success .input__success{
+.input_success .input__icon_success {
     display: initial;
 }
 
-.input_error .input__icon_error .input__error {
+.input_error .input__icon_error {
     display: initial;
 }
 
-.input_error .input__input_error  {
+.input_error .input__input  {
     border-color: var(--error);
 }
 
-.input_error .input__input_error:focus {
+.input_error .input__input:focus {
     border-color: var(--error);
 }
