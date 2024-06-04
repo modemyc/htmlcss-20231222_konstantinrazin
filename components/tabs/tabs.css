@@ -31,11 +31,11 @@
 
 .tabs__title {
     padding-bottom: 8px;
+    cursor: pointer;
 }
 
 .tabs__check {
     height: 5px;
-
 }
 
 .tabs__input:checked ~ .tabs__title {
