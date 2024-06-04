@@ -1,6 +1,6 @@
 .header {
     background: var(--white);
-    padding: 24px 0 77px;
+    padding: 24px 0 0;
     border-bottom: 1px solid #DDE2E5;
     color: var(--black);
 }
@@ -12,6 +12,7 @@
     font-style: normal;
     font-weight: 500;
     margin-top: 38px;
+    margin-bottom: 40px;
 }
 
 .header_inner {
@@ -29,6 +30,10 @@
 
 .header__nav_mobile {
     display: none;
+}
+
+.header__tabs {
+
 }
 
 @media screen and (max-width: 768px) {
