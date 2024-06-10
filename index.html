@@ -7,6 +7,9 @@
     </head>
     <body>
         <div class="page">
+            <input type="radio" class="tabs__input tabs__input-all" id="#all-tab" name="radio" checked>
+            <input type="radio" class="tabs__input tabs__input-complex" id="#complex-tab" name="radio">
+            <input type="radio" class="tabs__input tabs__input-simple" id="#simple-tab" name="radio">
             <header class="header">
                 <div class="container">
                     <div class="header__top">
@@ -36,13 +39,6 @@
                         </div>
                     </div>
                     <h1 class="header__tittle">Reusable component library</h1>
-                </div>
-            </header>
-            <main class="preview page__main">
-                <div class="container">
-                    <input type="radio" class="tabs__input tabs__input-all" id="#all-tab" name="radio" checked>
-                    <input type="radio" class="tabs__input tabs__input-complex" id="#complex-tab" name="radio">
-                    <input type="radio" class="tabs__input tabs__input-simple" id="#simple-tab" name="radio">
                     <div class="tabs">
                         <div class="tabs__scroller">
                             <label class="tabs__tab tabs__tab_all" for="#all-tab">
@@ -59,6 +55,10 @@
                             </label>
                         </div>
                     </div>
+                </div>
+            </header>
+            <main class="preview page__main">
+                <div class="container">
                     <div class="preview__cards">
                         <div class="card card_complex">
                             <div class="card__content">

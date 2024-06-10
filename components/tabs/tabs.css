@@ -2,8 +2,6 @@
     min-width: 100%;
     overflow-x: auto;
     background-color: var(--white);
-    margin-bottom: 80px;
-    margin-top: -105px;
 }
 
 .tabs::-webkit-scrollbar {
@@ -39,34 +37,34 @@
     height: 5px;
 }
 
-.tabs__input-all:checked ~ .tabs .tabs__scroller .tabs__tab_all .tabs__title {
+.tabs__input-all:checked ~ .header .container .tabs .tabs__scroller .tabs__tab_all .tabs__title {
     color: var(--black);
 }
 
-.tabs__input-all:checked ~ .tabs .tabs__scroller .tabs__tab_all .tabs__check {
+.tabs__input-all:checked ~ .header .container .tabs .tabs__scroller .tabs__tab_all .tabs__check {
     background-color: var(--black);
 }
 
-.tabs__input-complex:checked ~ .tabs .tabs__scroller .tabs__tab_complex .tabs__title {
+.tabs__input-complex:checked ~ .header .container .tabs .tabs__scroller .tabs__tab_complex .tabs__title {
     color: var(--black);
 }
 
-.tabs__input-complex:checked ~ .tabs .tabs__scroller .tabs__tab_complex .tabs__check {
+.tabs__input-complex:checked ~ .header .container .tabs .tabs__scroller .tabs__tab_complex .tabs__check {
     background-color: var(--black);
 }
 
-.tabs__input-simple:checked ~ .tabs .tabs__scroller .tabs__tab_simple .tabs__title {
+.tabs__input-simple:checked ~ .header .container .tabs .tabs__scroller .tabs__tab_simple .tabs__title {
     color: var(--black);
 }
 
-.tabs__input-simple:checked ~ .tabs .tabs__scroller .tabs__tab_simple .tabs__check {
+.tabs__input-simple:checked ~ .header .container .tabs .tabs__scroller .tabs__tab_simple .tabs__check {
     background-color: var(--black);
 }
 
-.tabs__input-complex:checked ~ .preview__cards .card_simple {
+.tabs__input-complex:checked ~ .preview .container .preview__cards .card_simple {
     display: none;
 }
 
-.tabs__input-simple:checked ~ .preview__cards .card_complex {
+.tabs__input-simple:checked ~ .preview .container .preview__cards .card_complex {
     display: none;
 }
