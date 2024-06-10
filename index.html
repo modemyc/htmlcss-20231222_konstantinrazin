@@ -36,45 +36,31 @@
                         </div>
                     </div>
                     <h1 class="header__tittle">Reusable component library</h1>
+                </div>
+            </header>
+            <main class="preview page__main">
+                <div class="container">
+                    <input type="radio" class="tabs__input tabs__input-all" id="#all-tab" name="radio" checked>
+                    <input type="radio" class="tabs__input tabs__input-complex" id="#complex-tab" name="radio">
+                    <input type="radio" class="tabs__input tabs__input-simple" id="#simple-tab" name="radio">
                     <div class="tabs">
                         <div class="tabs__scroller">
-                            <label class="tabs__tab" for="#all-tab">
-                                <input type="radio" class="tabs__input tabs__input_all" id="#all-tab" name="radio" checked>    
+                            <label class="tabs__tab tabs__tab_all" for="#all-tab">
                                 <div class="tabs__title">All components</div>
                                 <div class="tabs__check"></div>
                             </label>
-                            <label class="tabs__tab" for="#complex-tab">
-                                <input type="radio" class="tabs__input tabs__input_complex" id="#complex-tab" name="radio">
+                            <label class="tabs__tab tabs__tab_complex" for="#complex-tab">
                                 <div class="tabs__title">Complex</div>
                                 <div class="tabs__check"></div>
                             </label>
-                            <label class="tabs__tab" for="#simple-tab">
-                                <input type="radio" class="tabs__input tabs__input_simple" id="#simple-tab" name="radio">
+                            <label class="tabs__tab tabs__tab_simple" for="#simple-tab">
                                 <div class="tabs__title">Simple</div>
                                 <div class="tabs__check"></div>
                             </label>
                         </div>
                     </div>
-                    <!-- <script>
-                        (function() {
-                            function scrollHorizontally(e) {
-                                e = window.event || e;
-                                var delta = Math.max(-3, Math.min(3, (e.wheelDelta || -e.detail)));
-                                document.getElementById('tabs').scrollLeft -= (delta*10);
-                                e.preventDefault();
-                            }
-
-                            if (document.getElementById('tabs').addEventListener) {
-                                    document.getElementById('tabs').addEventListener("mousewheel", scrollHorizontally, false);       
-                            }
-                        })();
-                    </script> -->
-                </div>
-            </header>
-            <main class="preview page__main">
-                <div class="container">
                     <div class="preview__cards">
-                        <div class="card">
+                        <div class="card card_complex">
                             <div class="card__content">
                                 <div class="histogram">
                                     <div class="histogram__nav">
@@ -119,11 +105,11 @@
                             </div>
                             <a class="card__tittle" href="/pages/template.html">Histogram </a>
                         </div>
-                        <div class="card">
+                        <div class="card card_simple">
                             <div class="card__content"></div>
                             <div class="card__tittle">Custom form elements</div>
                         </div>
-                        <div class="card">
+                        <div class="card card_complex">
                             <div class="card__content">
                                 <div class="calendar">
                                     <div class="calendar__title">October 2019</div>
@@ -177,15 +163,15 @@
                             </div>
                             <div class="card__tittle">Calendar</div>
                         </div>
-                        <div class="card">
+                        <div class="card card_simple">
                             <div class="card__content"></div>
                             <div class="card__tittle">Modal dialog</div>
                         </div>
-                        <div class="card">
+                        <div class="card card_simple">
                             <div class="card__content"></div>
                             <div class="card__tittle">Tooltip</div>
                         </div>
-                        <div class="card">
+                        <div class="card card_simple">
                             <div class="card__content"></div>
                             <div class="card__tittle">Avatar</div>
                         </div>
