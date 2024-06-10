@@ -32,10 +32,6 @@
     display: none;
 }
 
-.header__tabs {
-
-}
-
 @media screen and (max-width: 768px) {
     .header__tittle {
         font-weight: 400;
