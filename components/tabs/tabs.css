@@ -68,3 +68,12 @@
 .tabs__input-simple:checked ~ .preview .container .preview__cards .card_complex {
     display: none;
 }
+
+.tabs__tab:hover {
+    color: var(--black);
+}
+
+/* мне больше нравится без подчеркивания:) */
+/* .tabs__tab:hover .tabs__check{
+    background-color: var(--black);
+} */
