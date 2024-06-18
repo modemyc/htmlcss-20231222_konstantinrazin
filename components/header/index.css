@@ -56,5 +56,6 @@
 
     .header__nav_mobile {
         display: contents;
+        cursor: pointer;
     }
 }
