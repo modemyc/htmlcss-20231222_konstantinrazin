@@ -5,42 +5,61 @@
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./burger-menu.css">
         <link rel="stylesheet" href="../../components/header/index.css">
+        <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
         <script defer src="./burger-menu.js"></script>
     </head>
     <body>
-        <div id="burger-menu-open" class="header__nav_mobile">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </div>
-
-        <div id="burger-menu" class="burger">
-            <div class="burger__header">
-                <div id="burger-menu-close" class="">
-                    
-                </div>
-                <div class="header__logo">
-                    <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_103965_110)">
-                        <rect y="1" width="30" height="30" fill="#212429"/>
-                        <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
-                        <path d="M78 0L110 32H78V0Z" fill="#212429"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_103965_110">
-                        <rect width="110" height="32" fill="white"/>
-                        </clipPath>
-                        </defs>
-                    </svg>
-                </div>
+        <div class="container">
+            <div id="burger-menu-open" class="header__nav_mobile">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
             </div>
-            <div class="burger__mode">
 
-            </div>
-            <div class="burger__components">
+            <div id="burger-menu" class="burger">
+                <div class="burger__header">
+                    <div class="burger__inner">
+                        <div id="burger-menu-close" class="burger__close">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 6L6 18" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M6 6L18 18" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="header__logo">
+                        <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_103965_110)">
+                            <rect y="1" width="30" height="30" fill="#212429"/>
+                            <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                            <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_103965_110">
+                            <rect width="110" height="32" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="burger__mode">
+                    <label class="toggle">
+                        <input type="checkbox" class="toggle__input " disabled>
+                        <div class="toggle__state toggle__state_burger">
+                            <div class="toggle__title">Dark mode</div>
+                            <div class="toggle__controle">
+                                <div class="toggle__circle">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="24" height="24" rx="12"/>
+                                        </svg>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="burger__components">
 
+                </div>
             </div>
         </div>
     </body>
