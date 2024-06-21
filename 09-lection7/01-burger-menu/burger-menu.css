@@ -7,12 +7,13 @@
     right: 0;
     bottom: 0;
     transform: translateX(-100vw);
-    transition: transform 0.4s;
+    /* transition: transform 0.4s; */
     z-index: 2;
 }
 
 .burger[data-open] {
     transform: translateX(0);
+    transition: transform 0.4s;
 }
 
 .burger__header {
@@ -49,4 +50,11 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .burger[data-open] {
+        transform: translateX(-100vw);
+        transition: transform 0s;
+    }
 }
