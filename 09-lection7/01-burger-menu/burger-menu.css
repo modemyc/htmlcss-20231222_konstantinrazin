@@ -7,13 +7,13 @@
     right: 0;
     bottom: 0;
     transform: translateX(-100vw);
-    /* transition: transform 0.4s; */
+    transition: transform 0.4s;
     z-index: 2;
 }
 
 .burger[data-open] {
     transform: translateX(0);
-    transition: transform 0.4s;
+    /* transition: transform 0.4s; */
 }
 
 .burger__header {
@@ -57,4 +57,37 @@
         transform: translateX(-100vw);
         transition: transform 0s;
     }
+}
+
+.burger__components {
+    padding-top: 24px;
+}
+
+.burger__component {
+    padding-bottom: 72px;
+}
+
+.burger__text {
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+.burger__link {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--black);
+}
+
+.burger__link_title {
+    color: var(--grey-3);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.burger__link:hover {
+    color: #d84910;
 }
