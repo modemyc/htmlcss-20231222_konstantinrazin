@@ -2,14 +2,118 @@
 <!-- Пример использования theme-changer -->
 <html lang="ru">
     <head>
+        <link rel="stylesheet" href="../../assets/css/main.css">
         <style>
             html[data-theme-dark] {
-                background: #000;
+                background: #212429;
+            }
+
+            .toggle {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                max-width: 110px;
+            }
+    
+            .toggle__state {
+                display: flex;
+                flex-direction: row;
+                gap: 12px;
+            }
+
+            .toggle__controle {
+                box-sizing: border-box;
+                border: 1px solid var(--grey-2);
+                border-radius: 16px;
+                width: 52px;
+                height: 28px;
+                background: #fff;
+                display: flex;
+                justify-content: flex-start;
+                padding: 2px;
+            }
+
+            .toggle__circle {
+                fill: var(--grey-2);
+                display: flex;
+                align-items: center;
+            }
+
+            .toggle__input {
+                position: absolute;
+                left: -100vw;
+            }
+
+            .toggle__input:checked ~ .toggle__state .toggle__controle {
+                background: var(--blue);
+                border-color: var(--blue);
+                justify-content: flex-end;
+            }
+
+            .toggle__input:checked ~ .toggle__state .toggle__controle .toggle__circle {
+                fill: #fff;
+            }
+
+            .toggle__input:disabled ~ .toggle__state .toggle__controle {
+                background: var(--grey-2);
+            }
+
+            .toggle__input:disabled ~ .toggle__state .toggle__controle .toggle__circle {
+                fill: var(--grey-3);
             }
         </style>
         <script defer src="./theme-changer.js"></script>
     </head>
+    
     <body>
-        <input type="checkbox" id="theme-changer">
+        <label class="toggle">
+            <div class="toggle__title">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_16769_229)">
+                        <path
+                            d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z"
+                            stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 1V3" stroke="#495057" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M12 21V23" stroke="#495057" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4.22021 4.21997L5.64021 5.63997" stroke="#495057" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M18.3599 18.36L19.7799 19.78" stroke="#495057" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1 12H3" stroke="#495057" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M21 12H23" stroke="#495057" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4.22021 19.78L5.64021 18.36" stroke="#495057" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M18.3599 5.63997L19.7799 4.21997" stroke="#495057" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_16769_229">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>                   
+            </div>
+            <input type="checkbox" class="toggle__input" id="theme-changer">
+            <div class="toggle__state">
+                <div class="toggle__controle">
+                    <div class="toggle__circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="24" height="24" rx="12"/>
+                            </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="toggle__title">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18.9999 10.79C18.8426 12.4922 18.2038 14.1144 17.1581 15.4668C16.1125 16.8192 14.7034 17.8458 13.0956 18.4265C11.4878 19.0073 9.74789 19.1181 8.0794 18.7461C6.41092 18.3741 4.8829 17.5345 3.67413 16.3258C2.46536 15.117 1.62584 13.589 1.25381 11.9205C0.881777 10.252 0.992617 8.51208 1.57336 6.9043C2.15411 5.29651 3.18073 3.88737 4.53311 2.84175C5.8855 1.79614 7.5077 1.15731 9.2099 1C8.21331 2.34827 7.73375 4.00945 7.85843 5.68141C7.98312 7.35338 8.70376 8.92506 9.8893 10.1106C11.0748 11.2961 12.6465 12.0168 14.3185 12.1415C15.9905 12.2662 17.6516 11.7866 18.9999 10.79V10.79Z"
+                        stroke="#ACB5BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>   
+            </div>
+        </label>
     </body>
 </html>
