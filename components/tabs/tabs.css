@@ -1,0 +1,79 @@
+.tabs {
+    min-width: 100%;
+    overflow-x: auto;
+    background-color: var(--white);
+}
+
+.tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.tabs__input {
+    position: absolute;
+    left: -100vw;
+}
+
+.tabs__scroller {
+    display: flex;
+}
+
+.tabs__tab {
+    font-family: 'Inter', sans-serif;
+    padding-right: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    height: 37px;
+    line-height: 150%;
+    color: var(--grey-3);
+    white-space: nowrap;
+}
+
+.tabs__title {
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+.tabs__check {
+    height: 5px;
+}
+
+.tabs__input-all:checked ~ .header .container .tabs .tabs__scroller .tabs__tab_all .tabs__title {
+    color: var(--black);
+}
+
+.tabs__input-all:checked ~ .header .container .tabs .tabs__scroller .tabs__tab_all .tabs__check {
+    background-color: var(--black);
+}
+
+.tabs__input-complex:checked ~ .header .container .tabs .tabs__scroller .tabs__tab_complex .tabs__title {
+    color: var(--black);
+}
+
+.tabs__input-complex:checked ~ .header .container .tabs .tabs__scroller .tabs__tab_complex .tabs__check {
+    background-color: var(--black);
+}
+
+.tabs__input-simple:checked ~ .header .container .tabs .tabs__scroller .tabs__tab_simple .tabs__title {
+    color: var(--black);
+}
+
+.tabs__input-simple:checked ~ .header .container .tabs .tabs__scroller .tabs__tab_simple .tabs__check {
+    background-color: var(--black);
+}
+
+.tabs__input-complex:checked ~ .preview .container .preview__cards .card_simple {
+    display: none;
+}
+
+.tabs__input-simple:checked ~ .preview .container .preview__cards .card_complex {
+    display: none;
+}
+
+.tabs__tab:hover {
+    color: var(--black);
+}
+
+/* мне больше нравится без подчеркивания:) */
+/* .tabs__tab:hover .tabs__check{
+    background-color: var(--black);
+} */
