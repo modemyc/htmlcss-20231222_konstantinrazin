@@ -11,9 +11,17 @@
 
 .card__content {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-grow: 1;
     justify-content: center;
+    align-items: center;
+}
+
+.card__content_wraper {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -29,3 +37,8 @@
     margin-top: 25px;
 }
 
+.card__wraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
