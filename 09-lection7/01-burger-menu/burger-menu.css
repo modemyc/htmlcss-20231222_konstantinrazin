@@ -9,6 +9,7 @@
     transform: translateX(-100vw);
     transition: transform 0.4s;
     z-index: 2;
+    max-width: 428px;
 }
 
 .burger[data-open] {
