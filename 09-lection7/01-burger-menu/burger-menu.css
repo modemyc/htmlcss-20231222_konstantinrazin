@@ -7,14 +7,20 @@
     right: 0;
     bottom: 0;
     transform: translateX(-100vw);
-    transition: transform 0.4s;
+    /* transition: transform 0.4s; */
     z-index: 2;
     max-width: 428px;
+    overflow: auto;
+    height: 100%;
+}
+
+.burger::-webkit-scrollbar{
+    width: 0;
 }
 
 .burger[data-open] {
     transform: translateX(0);
-    /* transition: transform 0.4s; */
+    transition: transform 0.4s;
 }
 
 .burger__header {

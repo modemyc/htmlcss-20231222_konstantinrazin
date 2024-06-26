@@ -15,6 +15,7 @@
     flex-grow: 1;
     justify-content: center;
     align-items: center;
+    min-height: 250px;
 }
 
 .card__content_wraper {
