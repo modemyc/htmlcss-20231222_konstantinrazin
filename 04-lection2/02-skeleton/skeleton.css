@@ -6,6 +6,7 @@
     padding: 24px 40px 32px 24px;
     /*развлечения ради*/
     animation: fade 1s linear infinite alternate;
+    width: 100%;
 }
 
 .skeleton__top {

@@ -63,6 +63,14 @@
     display: initial;
 }
 
+.input_success .input__input  {
+    border-color: var(--blue);
+}
+
+.input_success .input__input:focus {
+    border-color: var(--blue);
+}
+
 .input_error .input__input  {
     border-color: var(--error);
 }
