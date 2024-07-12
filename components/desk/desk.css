@@ -4,6 +4,7 @@
 }
 
 .desk__title {
+    text-decoration: none;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 28px;
