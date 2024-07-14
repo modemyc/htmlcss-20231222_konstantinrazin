@@ -1,0 +1,5 @@
+.code__title {
+    display: flex;
+    border-bottom: 1px solid var(--grey-2);
+    padding-left: 36px;
+}

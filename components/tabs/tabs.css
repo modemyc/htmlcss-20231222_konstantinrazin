@@ -37,6 +37,14 @@
     height: 5px;
 }
 
+.tabs__input:checked ~ .tabs__title {
+    color: var(--black);
+}
+
+.tabs__input:checked ~ .tabs__check {
+    background-color: var(--black);
+}
+
 .tabs__input-all:checked ~ .header .container .tabs .tabs__scroller .tabs__tab_all .tabs__title {
     color: var(--black);
 }

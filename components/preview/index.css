@@ -17,10 +17,22 @@
 
 }
 
-.preview__inner {
-    padding-top: 36px;
-    padding-bottom: 0px;
+.preview__title {
+    padding: 36px 36px 0px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 136%;
+    text-align: start;
+    color: var(--grey-4);
+}
 
+.preview__inner {
+    padding: 36px 36px 0px;
+}
+
+.preview__code {
+    padding: 36px 0px 36px;
 }
 
 .preview__content {
