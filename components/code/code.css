@@ -3,3 +3,7 @@
     border-bottom: 1px solid var(--grey-2);
     padding-left: 36px;
 }
+
+.code__inner {
+    text-wrap: wrap;
+}

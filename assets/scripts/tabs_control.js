@@ -1,8 +1,8 @@
 (function() {
     const tabHtml = document.getElementById('HTML-control');
     const tabCss = document.getElementById('CSS-control');
-    const htmlOpen = document.getElementById('code-html');
-    const cssOpen = document.getElementById('code-css');
+    const htmlOpen = document.querySelector('.code__html');
+    const cssOpen = document.querySelector('.code__css');
 
     if (!tabHtml || !tabCss || !htmlOpen || !cssOpen) {
         return;

@@ -1,3 +1,9 @@
+.toggle {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
 .toggle__state {
     display: flex;
     flex-direction: row;

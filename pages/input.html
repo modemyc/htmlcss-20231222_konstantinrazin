@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/normilize.css">
+    <script defer src="/09-lection7/01-burger-menu/burger-menu.js"></script>
+    <script defer src="../assets/scripts/tabs_control.js"></script>
+    <title>Input</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header header_inner">
+            <div class="container">
+                <div class="header__top">
+                    <a href="../index.html" class="header__logo">
+                        <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_103965_110)">
+                            <rect y="1" width="30" height="30" fill="#212429"/>
+                            <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                            <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_103965_110">
+                            <rect width="110" height="32" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <div class="header__nav">
+                        <div class="header__nav_desk">
+                            <a class="header__nav-link" href="../index.html#cards">Cards</a>
+                                <a class="header__nav-link" href="../index.html#components">Components</a>
+                                <a class="header__nav-link" href="../index.html#about">About</a>
+                                <label class="toggle">
+                                    <input type="checkbox" class="toggle__input " disabled>
+                                    <div class="toggle__state">
+                                        <div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_16770_270)">
+                                                <path d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 1V3" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 21V23" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M4.22021 4.21997L5.64021 5.63997" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M18.3599 18.36L19.7799 19.78" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M1 12H3" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M21 12H23" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M4.22021 19.78L5.64021 18.36" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M18.3599 5.63997L19.7799 4.21997" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_16770_270">
+                                                <rect width="24" height="24" fill="white"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <div class="toggle__controle">
+                                            <div class="toggle__circle">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="24" height="24" rx="12"/>
+                                                    </svg>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.9999 12.79C20.8426 14.4922 20.2038 16.1144 19.1581 17.4668C18.1125 18.8192 16.7034 19.8458 15.0956 20.4265C13.4878 21.0073 11.7479 21.1181 10.0794 20.7461C8.41092 20.3741 6.8829 19.5345 5.67413 18.3258C4.46536 17.117 3.62584 15.589 3.25381 13.9205C2.88178 12.252 2.99262 10.5121 3.57336 8.9043C4.15411 7.29651 5.18073 5.88737 6.53311 4.84175C7.8855 3.79614 9.5077 3.15731 11.2099 3C10.2133 4.34827 9.73375 6.00945 9.85843 7.68141C9.98312 9.35338 10.7038 10.9251 11.8893 12.1106C13.0748 13.2961 14.6465 14.0168 16.3185 14.1415C17.9905 14.2662 19.6516 13.7866 20.9999 12.79V12.79Z" stroke="#ACB5BD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </label>
+                        </div>
+                        <div id="burger-menu-open" class="header__nav_mobile">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="preview preview__inner page__main">
+            <div class="container">
+                <div id="burger-menu" class="burger">
+                    <div class="burger__header">
+                        <div class="burger__inner">
+                            <div id="burger-menu-close" class="burger__close">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 6L6 18" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M6 6L18 18" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="header__logo">
+                            <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_103965_110)">
+                                <rect y="1" width="30" height="30" fill="#212429"/>
+                                <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+                                <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_103965_110">
+                                <rect width="110" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="burger__mode">
+                        <label class="toggle">
+                            <input type="checkbox" class="toggle__input " disabled>
+                            <div class="toggle__state toggle__state_burger">
+                                <div class="toggle__title">Dark mode</div>
+                                <div class="toggle__controle">
+                                    <div class="toggle__circle">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="24" height="24" rx="12"/>
+                                            </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="burger__components">
+                        <div class="burger__component">
+                            <h4 class="burger__text burger__link_title">Components</h4>
+                            <p class="burger__text"><a href="../pages/modal.html" class="burger__link">Modal</a></p>
+                            <p class="burger__text"><a href="../pages/tooltip.html" class="burger__link">Tooltip</a></p>
+                            <p class="burger__text"><a href="../pages/avatar.html" class="burger__link">Avatar</a></p>
+                            <p class="burger__text"><a href="../pages/calendar.html" class="burger__link">Calendar</a></p>
+                            <p class="burger__text"><a href="../pages/histogram.html" class="burger__link">Histogram</a></p>
+                            <p class="burger__text"><a href="../pages/customform.html" class="burger__link">Custom form elements</a></p>
+                        </div>
+                        <div class="burger__component">
+                            <p class="burger__text"><a href="../index.html" class="burger__link">Main page</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview__content">
+                    <nav class="sideMenu">
+                        <ul class="sideMenu__list">
+                            <li><h4 class="sideMenu__tittle">Components</h4></li>
+                            <li><a href="../pages/modal.html" class="sideMenu__element">Modal</a></li>
+                            <li><a href="../pages/tooltip.html" class="sideMenu__element">Tooltip</a></li>
+                            <li><a href="../pages/avatar.html" class="sideMenu__element">Avatar</a></li>
+                            <li><a href="../pages/calendar.html" class="sideMenu__element">Calendar</a></li>
+                            <li><a href="../pages/histogram.html" class="sideMenu__element">Histogram</a></li>
+                            <li><a href="../pages/customform.html" class="sideMenu__element">Custom form elements</a></li>
+                        </ul>
+                        <ul class="sideMenu__list">
+                            <li><a href="../index.html" class="sideMenu__element">Main page</a></li>
+                        </ul>
+                    </nav>
+                    <div class="preview__component">
+                        <div class="preview__title">Input form</div>
+                        <div class="preview__inner">
+                                <div class="input input__text">Label
+                                    <div class="input__field">
+                                        <input id="input-field" class="input__input" placeholder="Input field">
+                                        <div class="input__icon">
+                                            <svg class="input__icon_success" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18457 2.99721 7.13633 4.39828 5.49707C5.79935 3.85782 7.69279 2.71538 9.79619 2.24015C11.8996 1.76491 14.1003 1.98234 16.07 2.86" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M22 4L12 14.01L9 11.01" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <svg class="input__icon_error" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.29 3.86001L1.82 18C1.64537 18.3024 1.55296 18.6453 1.55199 18.9945C1.55101 19.3437 1.64149 19.6871 1.81442 19.9905C1.98736 20.2939 2.23672 20.5468 2.53771 20.7239C2.83869 20.901 3.1808 20.9962 3.53 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5468 22.0126 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.447 18.6453 22.3546 18.3024 22.18 18L13.71 3.86001C13.5317 3.56611 13.2807 3.32313 12.9812 3.15449C12.6817 2.98585 12.3437 2.89726 12 2.89726C11.6563 2.89726 11.3183 2.98585 11.0188 3.15449C10.7193 3.32313 10.4683 3.56611 10.29 3.86001V3.86001Z" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M12 9V13" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M12 16V16.5" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input input__text input_success">Label
+                                    <div class="input__field">
+                                        <input id="input-field" class="input__input" placeholder="Input field" value="Success">
+                                        <div class="input__icon">
+                                            <svg class="input__icon_success" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18457 2.99721 7.13633 4.39828 5.49707C5.79935 3.85782 7.69279 2.71538 9.79619 2.24015C11.8996 1.76491 14.1003 1.98234 16.07 2.86" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M22 4L12 14.01L9 11.01" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <svg class="input__icon_error" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.29 3.86001L1.82 18C1.64537 18.3024 1.55296 18.6453 1.55199 18.9945C1.55101 19.3437 1.64149 19.6871 1.81442 19.9905C1.98736 20.2939 2.23672 20.5468 2.53771 20.7239C2.83869 20.901 3.1808 20.9962 3.53 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5468 22.0126 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.447 18.6453 22.3546 18.3024 22.18 18L13.71 3.86001C13.5317 3.56611 13.2807 3.32313 12.9812 3.15449C12.6817 2.98585 12.3437 2.89726 12 2.89726C11.6563 2.89726 11.3183 2.98585 11.0188 3.15449C10.7193 3.32313 10.4683 3.56611 10.29 3.86001V3.86001Z" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M12 9V13" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M12 16V16.5" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input input__text input_error">Label
+                                    <div class="input__field">
+                                        <input id="input-field" class="input__input" placeholder="Input field" value="Error">
+                                        <div class="input__icon">
+                                            <svg class="input__icon_success" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18457 2.99721 7.13633 4.39828 5.49707C5.79935 3.85782 7.69279 2.71538 9.79619 2.24015C11.8996 1.76491 14.1003 1.98234 16.07 2.86" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M22 4L12 14.01L9 11.01" stroke="#374FC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            <svg class="input__icon_error" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.29 3.86001L1.82 18C1.64537 18.3024 1.55296 18.6453 1.55199 18.9945C1.55101 19.3437 1.64149 19.6871 1.81442 19.9905C1.98736 20.2939 2.23672 20.5468 2.53771 20.7239C2.83869 20.901 3.1808 20.9962 3.53 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5468 22.0126 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.447 18.6453 22.3546 18.3024 22.18 18L13.71 3.86001C13.5317 3.56611 13.2807 3.32313 12.9812 3.15449C12.6817 2.98585 12.3437 2.89726 12 2.89726C11.6563 2.89726 11.3183 2.98585 11.0188 3.15449C10.7193 3.32313 10.4683 3.56611 10.29 3.86001V3.86001Z" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M12 9V13" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M12 16V16.5" stroke="#F03D3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="preview__code">
+                            <div class="code__title">
+                                <div class="tabs">
+                                    <div class="tabs__scroller">
+                                        <label class="tabs__tab" for="HTML-control">
+                                            <input type="radio" class="tabs__input" id="HTML-control" name="radio-tabs" checked>
+                                            <div class="tabs__title">HTML</div>
+                                            <div class="tabs__check"></div>
+                                        </label>
+                                        <label class="tabs__tab" for="CSS-control">
+                                            <input type="radio" class="tabs__input" id="CSS-control" name="radio-tabs">
+                                            <div class="tabs__title">CSS</div>
+                                            <div class="tabs__check"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="code__code">
+                                <figure class="code__html">
+                                    <pre class="code__inner">
+                                        <code>
+&lt;div class=&quot;input input__text&quot;&gt;Label
+    &lt;div class=&quot;input__field&quot;&gt;
+        &lt;input id=&quot;input-field&quot; class=&quot;input__input&quot; placeholder=&quot;Input field&quot;&gt;
+        &lt;div class=&quot;input__icon&quot;&gt;
+            &lt;svg class=&quot;input__icon_success&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                &lt;path d=&quot;M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18457 2.99721 7.13633 4.39828 5.49707C5.79935 3.85782 7.69279 2.71538 9.79619 2.24015C11.8996 1.76491 14.1003 1.98234 16.07 2.86&quot; stroke=&quot;#374FC7&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+                &lt;path d=&quot;M22 4L12 14.01L9 11.01&quot; stroke=&quot;#374FC7&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+            &lt;/svg&gt;
+            &lt;svg class=&quot;input__icon_error&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                &lt;path d=&quot;M10.29 3.86001L1.82 18C1.64537 18.3024 1.55296 18.6453 1.55199 18.9945C1.55101 19.3437 1.64149 19.6871 1.81442 19.9905C1.98736 20.2939 2.23672 20.5468 2.53771 20.7239C2.83869 20.901 3.1808 20.9962 3.53 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5468 22.0126 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.447 18.6453 22.3546 18.3024 22.18 18L13.71 3.86001C13.5317 3.56611 13.2807 3.32313 12.9812 3.15449C12.6817 2.98585 12.3437 2.89726 12 2.89726C11.6563 2.89726 11.3183 2.98585 11.0188 3.15449C10.7193 3.32313 10.4683 3.56611 10.29 3.86001V3.86001Z&quot; stroke=&quot;#F03D3E&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+                &lt;path d=&quot;M12 9V13&quot; stroke=&quot;#F03D3E&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+                &lt;path d=&quot;M12 16V16.5&quot; stroke=&quot;#F03D3E&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+            &lt;/svg&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input input__text input_success&quot;&gt;Label
+    &lt;div class=&quot;input__field&quot;&gt;
+        &lt;input id=&quot;input-field&quot; class=&quot;input__input&quot; placeholder=&quot;Input field&quot; value=&quot;Success&quot;&gt;
+        &lt;div class=&quot;input__icon&quot;&gt;
+            &lt;svg class=&quot;input__icon_success&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                &lt;path d=&quot;M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18457 2.99721 7.13633 4.39828 5.49707C5.79935 3.85782 7.69279 2.71538 9.79619 2.24015C11.8996 1.76491 14.1003 1.98234 16.07 2.86&quot; stroke=&quot;#374FC7&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+                &lt;path d=&quot;M22 4L12 14.01L9 11.01&quot; stroke=&quot;#374FC7&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+            &lt;/svg&gt;
+            &lt;svg class=&quot;input__icon_error&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                &lt;path d=&quot;M10.29 3.86001L1.82 18C1.64537 18.3024 1.55296 18.6453 1.55199 18.9945C1.55101 19.3437 1.64149 19.6871 1.81442 19.9905C1.98736 20.2939 2.23672 20.5468 2.53771 20.7239C2.83869 20.901 3.1808 20.9962 3.53 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5468 22.0126 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.447 18.6453 22.3546 18.3024 22.18 18L13.71 3.86001C13.5317 3.56611 13.2807 3.32313 12.9812 3.15449C12.6817 2.98585 12.3437 2.89726 12 2.89726C11.6563 2.89726 11.3183 2.98585 11.0188 3.15449C10.7193 3.32313 10.4683 3.56611 10.29 3.86001V3.86001Z&quot; stroke=&quot;#F03D3E&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+                &lt;path d=&quot;M12 9V13&quot; stroke=&quot;#F03D3E&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+                &lt;path d=&quot;M12 16V16.5&quot; stroke=&quot;#F03D3E&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+            &lt;/svg&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input input__text input_error&quot;&gt;Label
+    &lt;div class=&quot;input__field&quot;&gt;
+        &lt;input id=&quot;input-field&quot; class=&quot;input__input&quot; placeholder=&quot;Input field&quot; value=&quot;Error&quot;&gt;
+        &lt;div class=&quot;input__icon&quot;&gt;
+            &lt;svg class=&quot;input__icon_success&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                &lt;path d=&quot;M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18457 2.99721 7.13633 4.39828 5.49707C5.79935 3.85782 7.69279 2.71538 9.79619 2.24015C11.8996 1.76491 14.1003 1.98234 16.07 2.86&quot; stroke=&quot;#374FC7&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+                &lt;path d=&quot;M22 4L12 14.01L9 11.01&quot; stroke=&quot;#374FC7&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+            &lt;/svg&gt;
+            &lt;svg class=&quot;input__icon_error&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+                &lt;path d=&quot;M10.29 3.86001L1.82 18C1.64537 18.3024 1.55296 18.6453 1.55199 18.9945C1.55101 19.3437 1.64149 19.6871 1.81442 19.9905C1.98736 20.2939 2.23672 20.5468 2.53771 20.7239C2.83869 20.901 3.1808 20.9962 3.53 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5468 22.0126 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.447 18.6453 22.3546 18.3024 22.18 18L13.71 3.86001C13.5317 3.56611 13.2807 3.32313 12.9812 3.15449C12.6817 2.98585 12.3437 2.89726 12 2.89726C11.6563 2.89726 11.3183 2.98585 11.0188 3.15449C10.7193 3.32313 10.4683 3.56611 10.29 3.86001V3.86001Z&quot; stroke=&quot;#F03D3E&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+                &lt;path d=&quot;M12 9V13&quot; stroke=&quot;#F03D3E&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+                &lt;path d=&quot;M12 16V16.5&quot; stroke=&quot;#F03D3E&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; /&gt;
+            &lt;/svg&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                        </code>
+                                    </pre>
+                                </figure>
+                                <figure class="code__css" style="display: none;">
+                                    <pre class="code__inner">
+                                        <code>
+.input {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: var(--grey-3);
+}
+
+.input__field {
+    display: flex;
+    flex-direction: column;
+}
+
+.input__input {
+    all: unset;
+    border-radius: 8px;
+    fill: #fff;
+    border: 1px solid;
+    border-color: var(--grey-2);
+    min-height: 56px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    padding-left: 24px;
+    padding-right: 40px;
+    color: var(--grey-4);
+    cursor: auto;
+}
+
+.input__input::placeholder {
+    color: var(--grey-2);
+}
+
+.input__input:focus {
+    border-color: var(--blue);
+    box-shadow: 0 1px 1px 0 rgba(51, 154, 240, 0.1);
+}
+
+.input__icon {
+    position: absolute;
+    padding-top: 16px;
+    padding-right: 16px;
+    align-self: flex-end;
+}
+
+.input__icon_success {
+    display: none;
+}
+
+.input__icon_error {
+    display: none;
+}
+
+.input_success .input__icon_success {
+    display: initial;
+}
+
+.input_error .input__icon_error {
+    display: initial;
+}
+
+.input_success .input__input  {
+    border-color: var(--blue);
+}
+
+.input_success .input__input:focus {
+    border-color: var(--blue);
+}
+
+.input_error .input__input  {
+    border-color: var(--error);
+}
+
+.input_error .input__input:focus {
+    border-color: var(--error);
+}
+                                        </code>
+                                    </pre>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main> 
+        <footer class="footer footer_inner">
+            <div class="container">
+                <h5 class="footer__content">Reusable component library</h5>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

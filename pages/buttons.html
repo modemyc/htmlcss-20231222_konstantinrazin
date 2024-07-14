@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../assets/css/normilize.css">
     <script defer src="/09-lection7/01-burger-menu/burger-menu.js"></script>
     <script defer src="../assets/scripts/tabs_control.js"></script>
-    <title>Template</title>
+    <title>Button</title>
 </head>
 <body>
     <div class="page">
@@ -155,9 +155,14 @@
                         </ul>
                     </nav>
                     <div class="preview__component">
-                        <div class="preview__title">Element</div>
+                        <div class="preview__title">Buttons</div>
                         <div class="preview__inner">
-                            
+                            <button class="button button_primary">Primary</button>
+                            <button class="button button_primary" disabled>Primary disabled</button>
+                            <button class="button button_secondary">Secondary</button>
+                            <button class="button button_secondary" disabled>Secondary disabled</button>
+                            <button class="button button_alternate">Alternate</button>
+                            <button class="button button_alternate" disabled>Alternate disabled</button>
                         </div>
                         <div class="preview__code">
                             <div class="code__title">
@@ -180,14 +185,64 @@
                                 <figure class="code__html">
                                     <pre class="code__inner">
                                         <code>
-
+&lt;button class=&quot;button button_primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;button button_primary&quot; disabled&gt;Primary disabled&lt;/button&gt;
+&lt;button class=&quot;button button_secondary&quot;&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;button button_secondary&quot; disabled&gt;Secondary disabled&lt;/button&gt;
+&lt;button class=&quot;button button_alternate&quot;&gt;Alternate&lt;/button&gt;
+&lt;button class=&quot;button button_alternate&quot; disabled&gt;Alternate disabled&lt;/button&gt;
                                         </code>
                                     </pre>
                                 </figure>
                                 <figure class="code__css" style="display: none;">
                                     <pre class="code__inner">
                                         <code>
+.button {
+    height: 48px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-style: solid;
+    border-width: 0px;
+    line-height: normal;
+    font-family: Roboto, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
 
+.button:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.button_primary {
+    background-color: #4263EB;  
+}
+
+.button_primary:hover {
+    background-color: #2342C0;
+}
+
+.button_secondary {
+    background-color: #7048E8;
+}
+
+.button_secondary:hover {
+    background-color: #5028C6;
+}
+
+.button_alternate {
+    color: #495057;
+    border-width: 1px;
+    border-color: #ACB5BD;
+}
+
+.button_alternate:hover {
+    border-color: #212429;
+    color: #495057;
+}
                                         </code>
                                     </pre>
                                 </figure>
