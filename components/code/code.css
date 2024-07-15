@@ -4,6 +4,11 @@
     padding-left: 36px;
 }
 
-.code__inner {
+.code__html {
+    text-wrap: wrap;
+}
+
+.code__css {
+    display: none;
     text-wrap: wrap;
 }
