@@ -1,7 +1,21 @@
+.toggle {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
 .toggle__state {
     display: flex;
     flex-direction: row;
     gap: 12px;
+}
+
+.toggle__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--grey-4);
 }
 
 .toggle__controle {
@@ -43,4 +57,10 @@
 
 .toggle__input:disabled ~ .toggle__state .toggle__controle .toggle__circle {
     fill: var(--grey-3);
+}
+
+.toggle__state_burger {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }

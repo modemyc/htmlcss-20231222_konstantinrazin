@@ -34,3 +34,9 @@
 .sideMenu__element:hover {
     color: #D84910;
 }
+
+@media screen and (max-width: 768px) {
+    .sideMenu {
+        display: none;
+    }
+}

@@ -1,0 +1,23 @@
+.desk {
+    display: flex;
+    flex-direction: column;
+}
+
+.desk__title {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 136%;
+    color: var(--grey-3);
+    padding-bottom: 30px;
+    align-self: flex-start;
+}
+
+.desk__content {
+    padding-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}

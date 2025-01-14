@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../assets/css/normilize.css">
     <script defer src="/09-lection7/01-burger-menu/burger-menu.js"></script>
     <script defer src="../assets/scripts/tabs_control.js"></script>
-    <title>Template</title>
+    <title>Skeleton</title>
 </head>
 <body>
     <div class="page">
@@ -155,9 +155,25 @@
                         </ul>
                     </nav>
                     <div class="preview__component">
-                        <div class="preview__title">Element</div>
+                        <div class="preview__title">Skeleton</div>
                         <div class="preview__inner">
-                            
+                            <div class="preview__inner_flex">
+                                <div class="skeleton">
+                                    <div class="skeleton__top">
+                                        <div class="skeleton__avatar"></div>
+                                        <div class="skeleton__data">
+                                            <div class="skeleton__band skeleton__band_s"></div>
+                                            <div class="skeleton__band skeleton__band_m"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skeleton__bottom">
+                                        <div class="skeleton__data">
+                                            <div class="skeleton__band skeleton__band_l"></div>
+                                            <div class="skeleton__band skeleton__band_l"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="preview__code">
                             <div class="code__title">
@@ -177,15 +193,92 @@
                                 </div>
                             </div>
                             <div class="code__code">
-                                <figure class="code__css">
+                                <figure class="code__inner">
                                     <pre class="code__html">
                                         <code>
-
+&lt;div class=&quot;skeleton&quot;&gt;
+    &lt;div class=&quot;skeleton__top&quot;&gt;
+        &lt;div class=&quot;skeleton__avatar&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;skeleton__data&quot;&gt;
+            &lt;div class=&quot;skeleton__band skeleton__band_s&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;skeleton__band skeleton__band_m&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;skeleton__bottom&quot;&gt;
+        &lt;div class=&quot;skeleton__data&quot;&gt;
+            &lt;div class=&quot;skeleton__band skeleton__band_l&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;skeleton__band skeleton__band_l&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
                                         </code>
                                     </pre>
                                     <pre class="code__css">
                                         <code>
+.skeleton {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px var(--Gray3, #ACB5BD);
+    border-radius: 8px;
+    padding: 24px 40px 32px 24px;
+    animation: fade 1s linear infinite alternate;
+    width: 100%;
+}
 
+.skeleton__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 24px;
+}
+
+.skeleton__avatar {
+    width: 64px;
+    height: 64px;
+    background-color: var(--Gray-2, #DDE2E5);
+    border-radius: 100%;
+    margin-right: 16px;
+}
+
+.skeleton__bottom {
+    
+}
+
+.skeleton__data {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 8px;
+    align-self: center;
+}
+
+.skeleton__band {
+    height: 20px;
+    background-color: #DDE2E5;
+    flex-grow: 1;
+}
+
+.skeleton__band_s {
+    width: 40%;
+}
+
+.skeleton__band_m {
+    width: 70%;
+}
+
+.skeleton__band_l {
+    width: 100%;
+}
+
+/*анимация моргания*/
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
                                         </code>
                                     </pre>
                                 </figure>

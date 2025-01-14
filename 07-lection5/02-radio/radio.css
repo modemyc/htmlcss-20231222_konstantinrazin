@@ -1,3 +1,9 @@
+.radio {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
 .radio__state {
     display: flex;
     flex-direction: row;
@@ -7,7 +13,7 @@
 .radio__control {
     box-sizing: border-box;
     border: 1px solid var(--grey-2);
-    border-radius: 14px;
+    border-radius: 100%;
     width: 28px;
     height: 28px;
     color: var(--white);
@@ -17,7 +23,7 @@
 }
 
 .radio__input {
-    position: relative;
+    position: absolute;
     left: -100vw;
 }
 

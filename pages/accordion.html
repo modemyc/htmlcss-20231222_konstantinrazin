@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../assets/css/normilize.css">
     <script defer src="/09-lection7/01-burger-menu/burger-menu.js"></script>
     <script defer src="../assets/scripts/tabs_control.js"></script>
-    <title>Template</title>
+    <title>Accordion</title>
 </head>
 <body>
     <div class="page">
@@ -155,9 +155,26 @@
                         </ul>
                     </nav>
                     <div class="preview__component">
-                        <div class="preview__title">Element</div>
+                        <div class="preview__title">Accordion</div>
                         <div class="preview__inner">
-                            
+                            <div class="accordion">
+                                <details class="accordion__item" open>
+                                    <summary class="accordion__summary">
+                                        Accordion item 1
+                                    </summary>
+                                    <p class="accordion__text">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                    </p>
+                                </details>
+                                <details class="accordion__item">
+                                    <summary class="accordion__summary">
+                                        Accordion item 2
+                                    </summary>
+                                    <p class="accordion__text">
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                    </p>
+                                </details>
+                            </div>
                         </div>
                         <div class="preview__code">
                             <div class="code__title">
@@ -177,15 +194,68 @@
                                 </div>
                             </div>
                             <div class="code__code">
-                                <figure class="code__css">
+                                <figure class="code__inner">
                                     <pre class="code__html">
                                         <code>
-
+&lt;div class=&quot;accordion&quot;&gt;
+    &lt;details class=&quot;accordion__item&quot;&gt;
+        &lt;summary class=&quot;accordion__summary&quot;&gt;
+            Accordion item 1
+        &lt;/summary&gt;
+        &lt;p class=&quot;accordion__text&quot;&gt;
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        &lt;/p&gt;
+    &lt;/details&gt;
+    &lt;details class=&quot;accordion__item&quot;&gt;
+        &lt;summary class=&quot;accordion__summary&quot;&gt;
+            Accordion item 2
+        &lt;/summary&gt;
+        &lt;p class=&quot;accordion__text&quot;&gt;
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        &lt;/p&gt;
+    &lt;/details&gt;
+&lt;/div&gt;
                                         </code>
                                     </pre>
                                     <pre class="code__css">
                                         <code>
+.accordion {
+    font-size: 16px;
+    font-family: Inter;
+    color: #212429;
+    line-height: 24px;
+}
 
+.accordion__item {
+    border: 1px solid #ACB5BD;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    
+}
+
+.accordion__item[open] .accordion__summary{
+   padding: 24px 32px 24px 32px;
+}
+
+.accordion__item:last-child {
+    margin: 0;
+}
+
+.accordion__summary {
+    display: block;
+    padding: 24px 32px 24px 32px;
+    cursor: pointer;
+}
+
+.accordion__text {
+    margin: 0px;
+    padding: 0px 32px 24px 32px;
+    color: #495057;
+}
+
+.accordion__summary::-webkit-details-marker {
+    display: none;
+}
                                         </code>
                                     </pre>
                                 </figure>

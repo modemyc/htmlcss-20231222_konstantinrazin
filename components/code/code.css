@@ -1,0 +1,14 @@
+.code__title {
+    display: flex;
+    border-bottom: 1px solid var(--grey-2);
+    padding-left: 36px;
+}
+
+.code__html {
+    text-wrap: wrap;
+}
+
+.code__css {
+    display: none;
+    text-wrap: wrap;
+}

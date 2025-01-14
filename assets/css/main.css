@@ -5,9 +5,24 @@
 @import '../../components/footer/index.css';
 @import '../../components/container/container.css';
 @import '../../components/card/index.css';
+@import '../../03-lection1/01-button/button.css';
+@import '../../03-lection1/02-accordion/accordion.css';
 @import '../../04-lection2/01-histogram/histogram.css';
+@import '../../04-lection2/02-skeleton/skeleton.css';
+@import '../../05-lection3/01-tooltip/tooltip.css';
+@import '../../05-lection3/02-modal/modal.css';
 @import '../../components/sideMenu/sideMenu.css';
 @import '../../05-lection3/03-calendar/calendar.css';
+@import '../../components/tabs/tabs.css';
+@import '../../06-lection4/01-avatar/avatar.css';
+@import '../../06-lection4/03-srcset/srcset.css';
+@import '../../07-lection5/01-checkbox/checkbox.css';
+@import '../../07-lection5/02-radio/radio.css';
+@import '../../07-lection5/03-toggler/toggler.css';
+@import '../../07-lection5/04-input/input.css';
+@import '../../09-lection7/01-burger-menu/burger-menu.css';
+@import '../../components/desk/desk.css';
+@import '../../components/code/code.css';
 
 :root {
     --white: #ffffff;

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../assets/css/normilize.css">
     <script defer src="/09-lection7/01-burger-menu/burger-menu.js"></script>
     <script defer src="../assets/scripts/tabs_control.js"></script>
-    <title>Template</title>
+    <title>Avatar</title>
 </head>
 <body>
     <div class="page">
@@ -155,9 +155,11 @@
                         </ul>
                     </nav>
                     <div class="preview__component">
-                        <div class="preview__title">Element</div>
+                        <div class="preview__title">Avatar</div>
                         <div class="preview__inner">
-                            
+                            <div class="avatar">
+                                <img src="/06-lection4/01-avatar/public/avatar-200.jpg" alt="img" class="avatar__pic">
+                            </div>
                         </div>
                         <div class="preview__code">
                             <div class="code__title">
@@ -177,15 +179,37 @@
                                 </div>
                             </div>
                             <div class="code__code">
-                                <figure class="code__css">
+                                <figure class="code__inner">
                                     <pre class="code__html">
                                         <code>
-
+&lt;div class=&quot;avatar&quot;&gt;
+    &lt;img src=&quot;  &quot; alt=&quot;img&quot; class=&quot;avatar__pic&quot;&gt;
+&lt;/div&gt;
                                         </code>
                                     </pre>
-                                    <pre class="code__css">
+                                    <pre class="code__css" >
                                         <code>
+.avatar {
+width: 102px;
+height: 102px;
+}
 
+.avatar__pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.avatar_s {
+    width: 64px;
+    height: 64px;
+}
+
+.avatar_l {
+    width: 160px;
+    height: 160px;
+}
                                         </code>
                                     </pre>
                                 </figure>
